@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/qiubo.AILK/.m2/repository/org/apache/camel/camel-http/2.7.2/camel-http-2.7.2.jar" sourcepath="C:/Users/qiubo.AILK/.m2/repository/org/apache/camel/camel-http/2.7.2/camel-http-2.7.2-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.camel"/>
+			<attribute name="maven.artifactId" value="camel-http"/>
+			<attribute name="maven.version" value="2.7.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-frontend-simple/2.3.3/cxf-rt-frontend-simple-2.3.3.jar" sourcepath="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-frontend-simple/2.3.3/cxf-rt-frontend-simple-2.3.3-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.cxf"/>
+			<attribute name="maven.artifactId" value="cxf-rt-frontend-simple"/>
+			<attribute name="maven.version" value="2.3.3"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-core/2.3.3/cxf-rt-core-2.3.3.jar" sourcepath="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-core/2.3.3/cxf-rt-core-2.3.3-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.cxf"/>
+			<attribute name="maven.artifactId" value="cxf-rt-core"/>
+			<attribute name="maven.version" value="2.3.3"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-api/2.3.3/cxf-api-2.3.3.jar" sourcepath="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-api/2.3.3/cxf-api-2.3.3-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.cxf"/>
+			<attribute name="maven.artifactId" value="cxf-api"/>
+			<attribute name="maven.version" value="2.3.3"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-frontend-jaxws/2.3.3/cxf-rt-frontend-jaxws-2.3.3.jar" sourcepath="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-frontend-jaxws/2.3.3/cxf-rt-frontend-jaxws-2.3.3-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.cxf"/>
+			<attribute name="maven.artifactId" value="cxf-rt-frontend-jaxws"/>
+			<attribute name="maven.version" value="2.3.3"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/DataService/WEB-INF/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-frontend-jaxrs/2.3.3/cxf-rt-frontend-jaxrs-2.3.3.jar" sourcepath="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-frontend-jaxrs/2.3.3/cxf-rt-frontend-jaxrs-2.3.3-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.cxf"/>
+			<attribute name="maven.artifactId" value="cxf-rt-frontend-jaxrs"/>
+			<attribute name="maven.version" value="2.3.3"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-ws-addr/2.3.3/cxf-rt-ws-addr-2.3.3.jar" sourcepath="C:/Users/qiubo.AILK/.m2/repository/org/apache/cxf/cxf-rt-ws-addr/2.3.3/cxf-rt-ws-addr-2.3.3-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.cxf"/>
+			<attribute name="maven.artifactId" value="cxf-rt-ws-addr"/>
+			<attribute name="maven.version" value="2.3.3"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/qiubo.AILK/.m2/repository/org/apache/camel/camel-cxf/2.7.2/camel-cxf-2.7.2.jar" sourcepath="C:/Users/qiubo.AILK/.m2/repository/org/apache/camel/camel-cxf/2.7.2/camel-cxf-2.7.2-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.camel"/>
+			<attribute name="maven.artifactId" value="camel-cxf"/>
+			<attribute name="maven.version" value="2.7.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

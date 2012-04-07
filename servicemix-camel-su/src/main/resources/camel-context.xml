@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camel="http://camel.apache.org/schema/spring"
+	xmlns:cxf="http://camel.apache.org/schema/cxf"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
+       http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd">
+
+
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-http-jetty.xml" />
+
+	<bean id="realService" class="com.qiu.servicemix.helloworld.RealService"
+		init-method="start" destroy-method="stop">
+		<property name="url" value="http://localhost:9000/realService"></property>
+	</bean><!--
+	<cxf:cxfEndpoint id="helloworldService" wsdlURL="etc/HelloWorlds.wsdl"
+		endpointName="s:HelloWorldImplPort" serviceName="s:HelloWorldImplService"
+		xmlns:s="http://impl.helloworld.servicemix.qiu.com/">
+		</cxf:cxfEndpoint>
+		
+	--><!-- Camel component provides support for using Apache Camel to provide 
+		a full set of Enterprise Integration Pattern and flexible routing and transformation 
+		in both Java code or Spring XML to route services on the NMR. http://servicemix.apache.org/servicemix-camel.html 
+		http://camel.apache.org -->
+
+	<!-- A Camel endpoint uses a Camel camel-context.xml descriptor in place 
+		of the standard xbean.xml one. The camel-context.xml allows you to define 
+		your route as you want. -->
+
+
+	<!-- BEGIN SNIPPET: camel -->
+	<!-- Simple routing between SEDA endpoint. Camel supports jbi:, jms:, etc 
+		protocols/components. http://camel.apache.org/components.html -->
+	<camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
+		<!--<routeBuilder ref="routeBuilder"/>
+		--><!--<package>com.qiu.servicemix.helloworld</package>
+		--><!--<route>
+			<from uri="log:input" /> <to uri="log:output" /> 
+			<from uri="cxf:bean:helloworldService?dataFormat=MESSAGE" />
+			
+			<from uri="cxf:bean:helloworldService?wsdlURL=etc/HelloWorlds.wsdl"/>
+			<to uri="http://localhost:9000/realService?throwExceptionOnFailure=false" />
+		</route>
+	--></camelContext>
+<bean id="routeBuilder" class="com.qiu.servicemix.helloworld.RouteBuilderTest"></bean>
+	<!--<classpath>
+		<library>osgi:org.apache.cxf.bundle</library>
+	</classpath>
+
+--></beans>
